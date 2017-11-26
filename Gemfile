@@ -7,13 +7,6 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -22,24 +15,19 @@ gem 'awesome_print'
 
 # Respond with JSON on API by default
 gem 'responders', '~> 2.4'
-
 gem 'sshkit', '~> 1.13.1', '>= 1.7.1'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
 gem 'rails_12factor', group: :production
-gem 'rest-client'
-
 gem 'simple_command', '~> 0.0.9'
 
+# API Docs
+gem 'raddocs', '~> 2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -56,7 +44,7 @@ group :development, :test do
   gem 'simplecov', :require => false
 
   gem 'database_cleaner', '~> 1.3'
-  gem "factory_bot_rails"
+  gem 'factory_bot_rails'
   gem 'launchy'
   gem 'rspec-activemodel-mocks', '~> 1.0'
   gem 'rspec-collection_matchers'

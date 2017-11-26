@@ -18,7 +18,8 @@ ActiveRecord::Schema.define(version: 20171126134038) do
   create_table "atm_banknotes", force: :cascade do |t|
     t.integer "atm_id"
     t.integer "banknote_id"
-    t.string "amount"
+    t.integer "amount"
+    t.integer "operation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
