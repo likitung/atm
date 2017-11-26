@@ -1,7 +1,3 @@
 class Atm < ApplicationRecord
-  def change
-    create_table :atms do |t|
-      t.timestamps
-    end
-  end
+  has_many  :banknotes, through: :atm_banknotes
 end
