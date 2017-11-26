@@ -1,0 +1,32 @@
+default: &default
+   adapter: postgresql
+   encoding: unicode
+   database: bank
+   pool: 300
+   host: localhost
+   username: likitung
+   password:
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: bank
+  pool: 300
+  host: localhost
+  username: likitung
+  password:
+
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  host: localhost
+  username: likitung
+  password:
+  database: bank_test
+
+
+production:
+    <<: *default
