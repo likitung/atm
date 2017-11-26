@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: 'json' } do
     namespace :v1, defaults: { format: 'json' } do
-
+      resources :atms, only: %i[create]
     end
   end
   root to: 'api/v1/uptime#show'
