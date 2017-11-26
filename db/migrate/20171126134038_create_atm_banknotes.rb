@@ -4,7 +4,7 @@ class CreateAtmBanknotes < ActiveRecord::Migration[5.1]
       t.integer :atm_id
       t.integer :banknote_id
       t.string  :amount
-      
+
       t.timestamps
     end
   end
