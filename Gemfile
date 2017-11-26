@@ -38,8 +38,6 @@ gem 'better_errors', '~> 2.1', '>= 2.1.1'
 gem 'rails_12factor', group: :production
 gem 'rest-client'
 
-gem 'simple_form'
-
 gem 'simple_command', '~> 0.0.9'
 
 
