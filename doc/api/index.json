@@ -1,0 +1,31 @@
+{
+  "resources": [
+    {
+      "name": "ATMs",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Created ATM",
+          "link": "atms/created_atm.json",
+          "groups": "all",
+          "route": "/api/v1/atms",
+          "method": "post"
+        },
+        {
+          "description": "Deposit Banknotes to ATM",
+          "link": "atms/deposit_banknotes_to_atm.json",
+          "groups": "all",
+          "route": "/api/v1/atms/:id/deposit",
+          "method": "post"
+        },
+        {
+          "description": "Withdraw Banknotes from ATM",
+          "link": "atms/withdraw_banknotes_from_atm.json",
+          "groups": "all",
+          "route": "/api/v1/atms/:id/withdraw?amount=237",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}

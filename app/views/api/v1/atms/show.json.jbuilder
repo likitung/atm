@@ -1,1 +1,1 @@
-json.data @atm
+json.extract! @atm, :id, :name, :created_at, :updated_at

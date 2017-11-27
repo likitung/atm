@@ -10,5 +10,6 @@ Rails.application.routes.draw do
       resources :banknotes, only: %i[create]
     end
   end
+  mount Raddocs::App => '/docs'
   root to: 'api/v1/uptime#show'
 end

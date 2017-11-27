@@ -23,6 +23,7 @@ end
 
 # Enabling awesome print for debugging simplification during test runs
 require 'awesome_print'
+require 'factory_bot_rails'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

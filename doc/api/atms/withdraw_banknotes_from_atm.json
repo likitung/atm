@@ -1,0 +1,36 @@
+{
+  "resource": "ATMs",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/atms/:id/withdraw?amount=237",
+  "description": "Withdraw Banknotes from ATM",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/atms/3/withdraw?amount=237",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org"
+      },
+      "request_query_parameters": {
+        "amount": "237"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"50\": 2,\n  \"25\": 3,\n  \"10\": 6,\n  \"2\": 1\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost/api/v1/atms/3/withdraw?amount=237\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

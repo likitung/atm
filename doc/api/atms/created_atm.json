@@ -1,0 +1,41 @@
+{
+  "resource": "ATMs",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/atms",
+  "description": "Created ATM",
+  "explanation": null,
+  "parameters": [
+    {
+      "scope": "atm",
+      "required": false,
+      "name": "name",
+      "description": "Name of ATM"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/atms",
+      "request_body": "atm[name]=ATM+name",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"ATM name\",\n  \"created_at\": \"2017-11-27T09:05:50.079Z\",\n  \"updated_at\": \"2017-11-27T09:05:50.079Z\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost/api/v1/atms\" -d 'atm[name]=ATM+name' -X POST \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

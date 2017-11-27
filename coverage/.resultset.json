@@ -1,38 +1,34 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/likitung/Desktop/bank/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/likitung/Desktop/bank/app/models/atm_banknote.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null
-      ],
-      "/Users/likitung/Desktop/bank/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/likitung/Desktop/bank/app/models/atm.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/likitung/Desktop/bank/app/models/banknote.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
       "/Users/likitung/Desktop/bank/app/mailers/application_mailer.rb": [
         0,
+        0,
+        0,
+        0
+      ],
+      "/Users/likitung/Desktop/bank/app/models/atm.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/likitung/Desktop/bank/app/models/banknote.rb": [
+        0,
+        0,
+        null,
+        0,
+        0,
+        0
+      ],
+      "/Users/likitung/Desktop/bank/app/models/atm_banknote.rb": [
+        0,
+        0,
+        0,
+        null,
+        0,
+        0
+      ],
+      "/Users/likitung/Desktop/bank/app/models/application_record.rb": [
         0,
         0,
         0
@@ -245,6 +241,10 @@
         0,
         0
       ],
+      "/Users/likitung/Desktop/bank/app/helpers/application_helper.rb": [
+        0,
+        0
+      ],
       "/Users/likitung/Desktop/bank/app/channels/application_cable/connection.rb": [
         0,
         0,
@@ -268,6 +268,6 @@
         0
       ]
     },
-    "timestamp": 1511738883
+    "timestamp": 1511742665
   }
 }

@@ -101,7 +101,7 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
-    haml (5.0.2)
+    haml (5.0.4)
       temple (>= 0.8.0)
       tilt
     hashdiff (0.3.7)
@@ -130,6 +130,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.2)
+    mustache (1.0.5)
     mustermann (1.0.1)
     nenv (0.3.0)
     net-scp (1.2.1)
@@ -231,6 +232,10 @@ GEM
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
+    rspec_api_documentation (4.9.0)
+      activesupport (>= 3.0.0)
+      mustache (~> 1.0, >= 0.99.4)
+      rspec (~> 3.0)
     rspec_junit_formatter (0.3.0)
       rspec-core (>= 2, < 4, != 2.12.0)
     rubocop (0.51.0)
@@ -325,6 +330,7 @@ DEPENDENCIES
   rspec-collection_matchers
   rspec-its
   rspec-rails (~> 3.6)
+  rspec_api_documentation
   rspec_junit_formatter
   rubocop
   shoulda-callback-matchers (~> 1.1)

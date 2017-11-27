@@ -45,6 +45,7 @@ group :development, :test do
 
   gem 'database_cleaner', '~> 1.3'
   gem 'factory_bot_rails'
+  gem 'rspec_api_documentation'
   gem 'launchy'
   gem 'rspec-activemodel-mocks', '~> 1.0'
   gem 'rspec-collection_matchers'

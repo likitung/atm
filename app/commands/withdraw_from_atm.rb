@@ -37,12 +37,11 @@ class WithdrawFromAtm
       @amount = @amount.divmod(banknote.value)
       number_of_needed_banknotes = @amount[0]
       modulo = @amount[1]
-      evaliable_bunknotes = banknotes_hash[banknote.value]
+      evaliable_banknotes = banknotes_hash[banknote.value]
+      @amount = evaliable_banknotes - number_of_needed_banknotes
 
-      @amount = evaliable_bunknotes - number_of_needed_banknotes
-
-      if number_of_needed_banknotes > evaliable_bunknotes
-        number_of_needed_banknotes = evaliable_bunknotes
+      if number_of_needed_banknotes > evaliable_banknotes
+        number_of_needed_banknotes = evaliable_banknotes
       else
         @amount = 0
       end
